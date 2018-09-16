@@ -2,47 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SSCC</title>
     <link rel="stylesheet" type="text/css"
           href="lib/bootstrap.min.css">
     <script src="lib/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<form class="w-50 mx-auto mt-5">
-    <div class="azimuth-holder d-flex justify-content-between">
-        <div class="form-group">
-            <div class="font-weight-bold">
-                <label for="min-azimuth-input">Minimum Azimuth</label>
-            </div>
-            <input class="input-data form-control" id="min-azimuth-input" type="number" placeholder="Min Azimuth...">
-        </div>
-        <div class="form-group">
-            <div class="font-weight-bold">
-                <label for="min-elevation-input">Minimum Elevation</label>
-            </div>
-            <input class="input-data form-control" id="min-elevation-input" type="number"
-                   placeholder="Min Elevation...">
-        </div>
+<div class="container-fluid">
+    <div class="justify-content-center mt-5">
+        <h4 class="text-center w-50 mx-auto">
+            <a href="readme.html">Help</a>
+        </h4>
     </div>
-    <div class="elevation-holder d-flex justify-content-between">
-        <div class="form-group">
-            <div class="font-weight-bold">
-                <label for="max-azimuth-input">Maximum Azimuth</label>
+    <form class="w-50 mx-auto mt-5">
+        <div class="azimuth-holder d-flex justify-content-between">
+            <div class="form-group">
+                <div class="font-weight-bold">
+                    <label for="min-azimuth-input">Minimum Azimuth</label>
+                </div>
+                <input class="input-data form-control" id="min-azimuth-input" type="number"
+                       placeholder="Min Azimuth...">
             </div>
-            <input class="input-data form-control" id="max-azimuth-input" type="number" placeholder="Max Azimuth...">
-        </div>
-        <div class="form-group">
-            <div class="font-weight-bold">
-                <label for="max-elevation-input">Maximum Elevation</label>
+            <div class="form-group">
+                <div class="font-weight-bold">
+                    <label for="min-elevation-input">Minimum Elevation</label>
+                </div>
+                <input class="input-data form-control" id="min-elevation-input" type="number"
+                       placeholder="Min Elevation...">
             </div>
-            <input class="input-data form-control" id="max-elevation-input" type="number"
-                   placeholder="Max Elevation...">
         </div>
+        <div class="elevation-holder d-flex justify-content-between">
+            <div class="form-group">
+                <div class="font-weight-bold">
+                    <label for="max-azimuth-input">Maximum Azimuth</label>
+                </div>
+                <input class="input-data form-control" id="max-azimuth-input" type="number"
+                       placeholder="Max Azimuth...">
+            </div>
+            <div class="form-group">
+                <div class="font-weight-bold">
+                    <label for="max-elevation-input">Maximum Elevation</label>
+                </div>
+                <input class="input-data form-control" id="max-elevation-input" type="number"
+                       placeholder="Max Elevation...">
+            </div>
+        </div>
+    </form>
+    <div class="result-holder d-flex justify-content-between w-50 mt-5 mx-auto">
+        <h1 id="azimuth-result" class="text-center"></h1>
+        <h1 id="elevation-result" class="text-center"></h1>
     </div>
-</form>
-<div class="result-holder d-flex justify-content-between w-50 mt-5 mx-auto">
-    <h1 id="azimuth-result" class="text-center"></h1>
-    <h1 id="elevation-result" class="text-center"></h1>
 </div>
 <script>
     $('.input-data').on('change paste keyup', function () {

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SSCC - About</title>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="lib/bootstrap.min.css">
+    <script src="lib/showdown.min.js"></script>
+</head>
+<body>
+    <main id="content" class="container-fluid"></main>
+    <script>
+        let converter = new showdown.Converter();
+
+        $.get('README.md', function (readmeContent) {
+            $('#content').html(converter.makeHtml(readmeContent));
+        });
+    </script>
+</body>
+</html>

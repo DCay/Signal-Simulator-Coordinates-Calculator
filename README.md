@@ -30,3 +30,12 @@ The coordinates will then be calculated by the following formulas:
 
 If you've done **everything correctly** you should receive an output below with values which should be **completely accurate**.
 There is a chance of a slight precision loss, but it should be somewhere in the range of 0.1-0.2.
+
+## Credits
+
+[Signal Simulator Game](https://store.steampowered.com/app/839310/Signal_Simulator)
+
+Depedencies used:
+* [Jquery](https://jquery.com)
+* [Bootstrap](https://getbootstrap.com)
+* [Showdown.js](https://github.com/showdownjs/showdown)
