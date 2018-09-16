@@ -5,6 +5,8 @@
 This is a simple Coordinates Calculator for the Signal Simulator game.
 Due to the fact that Coordinate Calculation is not that simple, and it would be pretty slow to do it on-hand, I made this little calculator web page.
 
+The Calculator is hosted [here](https://dcay.github.io/Signal-Simulator-Coordinates-Calculator/).
+
 ## Tutorial
 
 When you capture a signal and your coordinates system starts generating random coordinates, you should monitor (watch) the coordinates and record:
