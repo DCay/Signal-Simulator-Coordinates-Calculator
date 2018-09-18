@@ -64,8 +64,8 @@
         let averageAzimut = ((maxAzimut - minAzimut) / 2.0) + minAzimut;
         let averageElevation = ((maxElevation - minElevation) / 2.0) + minElevation;
 
-        $('#azimuth-result').html('Azimut: ' + averageAzimut);
-        $('#elevation-result').html('Elevation: ' + averageElevation);
+        $('#azimuth-result').html('Azimut: ' + averageAzimut.toFixed(4));
+        $('#elevation-result').html('Elevation: ' + averageElevation.toFixed(4));
     });
 </script>
 </body>
